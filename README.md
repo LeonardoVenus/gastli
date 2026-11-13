@@ -29,7 +29,7 @@ Un sistema de finanzas personales modular y de alto rendimiento para terminal (L
 
 GASTLI se instala como cualquier aplicación de terminal y se abre desde cualquier carpeta con un solo comando: `gastli`.
 
-**Arch Linux (AUR):**
+** PROXIMAMENTE Arch Linux (AUR):**
 ```bash
 yay -S gastli
 # o
