@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gastli"
+version = "1.0.0"
+description = "Sistema de finanzas personales en terminal (TUI) con exportación a Excel"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["finanzas", "terminal", "tui", "curses", "gastos", "personal-finance"]
+classifiers = [
+    "Environment :: Console :: Curses",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = ["windows-curses; sys_platform == 'win32'"]
+
+[project.scripts]
+gastli = "gastli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
